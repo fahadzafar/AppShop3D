@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <shop3d.util.CustomFontBoldTextView
+
+                android:id="@+id/myorder_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order Id:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <shop3d.util.CustomFontBoldTextView
+
+                android:id="@+id/myorder_orderTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order Id:"
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/order_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Sale Price:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+
+                android:textSize="12sp" />
+
+
+            <shop3d.util.CustomFontTextView
+
+                android:id="@+id/myorder_orderPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Changeable Colors"
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/order_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Order Status:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+
+                android:textSize="12sp" />
+
+            <shop3d.util.CustomFontTextView
+
+                android:id="@+id/myorder_orderStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+
+                android:text="-"
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+
+                android:id="@+id/myorder_eShipDate_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Estimated Ship Date:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+
+            <shop3d.util.CustomFontTextView
+
+                android:id="@+id/myorder_eShipDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/myorder_eDelDate_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Estimated Delivery Date:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/myorder_eDelDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/myorder_stageCompleted_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Stages completed:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/myorder_stageCompleted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/myorder_stageInProgress_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="State in progress:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/myorder_stageInProgress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/myorder_orderItemCount_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="Item Types:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/myorder_orderItemCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/myorder_orderTitle"
+                android:layout_toRightOf="@id/myorder_orderTitle"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="Category"
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+
+                android:id="@+id/myorder_shippingCost_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Shipping Cost:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <shop3d.util.CustomFontTextView
+
+                android:id="@+id/myorder_shippingCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Shipping Cost: 0"
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+
+                android:id="@+id/myorder_taxCost_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Tax Cost:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <shop3d.util.CustomFontTextView
+
+                android:id="@+id/myorder_taxCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Tax Cost: 0"
+                android:textColor="#aaaaaa"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontBoldTextView
+                android:id="@+id/myorder_orderItemUPS_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="UPS Link:"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/myorder_orderItem_UPS_SETME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/myorder_itemInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#F46A26"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

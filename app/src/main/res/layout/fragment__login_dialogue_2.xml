@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/login_form"
+        style="@style/LoginFormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:contentDescription="Logo"
+                android:src="@drawable/logo"
+                android:layout_marginBottom="30dip" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/fb_login_2"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:background="@drawable/fb_login_btn_shop3d"
+            android:textColor="@color/white_color"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="------------- or --------------"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_username"/>
+
+
+            <EditText
+                android:id="@+id/frag_login_2_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/prompt_username"
+                android:maxLines="1"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_marginTop="15dp"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_password"/>
+        <EditText
+            android:id="@+id/frag_login_2_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="16sp"
+            android:hint="Password"
+            android:layout_marginLeft="10dp"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+
+        <Button
+            android:id="@+id/frag_login_2_btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background_btn_state"
+            android:textColor="@color/white_color"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:textSize="15sp"
+            android:text="Login" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:text="&lt;------- Swipe, to register"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</ScrollView>

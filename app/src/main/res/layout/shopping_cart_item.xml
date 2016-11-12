@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cartItem_ItemIcon"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:layout_margin="5dip" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical">
+
+        <shop3d.util.CustomFontBoldTextView
+            android:id="@+id/cartItem_ItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="3dp"
+            android:text="Model Title"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/main_ItemDimens"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Dimensions:"
+
+                    android:layout_marginRight="15dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+
+        <shop3d.util.CustomFontTextView
+            android:id="@+id/cartItem_ItemDimensions"
+            android:layout_width="0dp"
+            android:layout_weight="1.3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+            android:text="Dimensions: 5 x 3 x 4 in"
+            android:textColor="#aaaaaa"
+            android:textSize="12sp"></shop3d.util.CustomFontTextView>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/Cart_dim_text"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginRight="15dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/cartItem_dim"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="width x length x height"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp"></shop3d.util.CustomFontTextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/cartItem_ItemMaterial"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="Material"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp"></shop3d.util.CustomFontTextView>
+
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/main_ItemColor"
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Color"
+
+
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/cart_Item_price_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Price"
+
+                    android:layout_marginRight="15dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/cartItem_Price_value"
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:layout_height="wrap_content"
+
+                    android:text="$24(USD)"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp"></shop3d.util.CustomFontTextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:orientation="horizontal">
+                  <Button
+                    android:id="@+id/cartItem_ItemIncQuantity"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white_color"
+                    android:background="@drawable/background_btn_state"
+                    android:layout_marginRight="5dp"
+                    android:text="+" />
+                <shop3d.util.CustomFontTextView
+                    android:id="@+id/cartItem_ItemQuantity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="9"
+                    android:gravity="center"
+                    android:background="#E2E2E2"
+                    android:textColor="#aaaaaa"
+
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/cartitem_ItemDecQuantity"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white_color"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/background_btn_state"
+                    android:text="-" />
+
+</LinearLayout>
+
+                <TextView
+                    android:id="@+id/cartItem_ItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dip"
+                    android:text="25 $"
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:textSize="16dip"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dip"
+                    android:text=" x "
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:textSize="16dip"></TextView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dip"
+                    android:text=" = "
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:textSize="16dip"></TextView>
+
+
+
+                <shop3d.util.CustomFontBoldTextView
+                    android:id="@+id/cartItem_ItemQTPTotal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:text=" 100 $ "
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    ></shop3d.util.CustomFontBoldTextView>
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:orientation="horizontal">
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

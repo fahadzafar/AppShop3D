@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/list_view_bg"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/favorite_ItemIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+
+            android:paddingTop="7dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:padding="1dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip">
+
+        <shop3d.util.CustomFontBoldTextView
+            android:id="@+id/favorite_ItemTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:maxLines="2"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="2">
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/main_ItemModifiers"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Changeable Colors:"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+        <shop3d.util.CustomFontTextView
+            android:id="@+id/favorite_ItemModifiers"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Changeable Colors:"
+            android:textColor="#aaaaaa"
+            android:textSize="12sp" />
+
+            </LinearLayout>
+
+        <shop3d.util.CustomFontTextView
+            android:id="@+id/favorite_ItemCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/favorite_ItemTitle"
+            android:layout_toRightOf="@id/favorite_ItemTitle"
+            android:ellipsize="marquee"
+            android:paddingTop="2dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="Category"
+            android:textColor="#aaaaaa"
+            android:textSize="12sp"  />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="2">
+
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/main_Item_height_text"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Height"
+                android:textColor="#aaaaaa"
+                android:textSize="10sp" />
+        <TextView
+            android:id="@+id/favorite_ItemTall"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="5 inch"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:textColor="#aaaaaa"
+            android:textSize="10sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="2">
+
+
+            <shop3d.util.CustomFontTextView
+                android:id="@+id/main_Item_price_text"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Price Estimate:"
+                android:textColor="#aaaaaa"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/favorite_ItemPrice"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="$240"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="#aaaaaa"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/favorite_ItemRatings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="5"
+            android:textColor="#aaaaaa"
+            android:textIsSelectable="false"
+            android:textSize="12sp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating_star"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <Button
+                    android:id="@+id/favorite_BtnRemove"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:textSize="9sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white_color"
+                    android:focusable="false"
+                    android:background="@drawable/background_btn_state"
+                    android:text="Remove" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+</LinearLayout>

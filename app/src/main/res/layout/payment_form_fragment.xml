@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical"
+        android:background="#00ffffff"
+        android:visibility="visible">
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/cardholder_name"
+        android:hint="Cardholder Name"
+        android:nextFocusDown="@+id/number"
+        android:background="@null"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:nextFocusForward="@+id/number"
+        android:nextFocusRight="@+id/number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="#00ffffff"
+        android:visibility="visible">
+
+    <EditText
+        android:id="@+id/number"
+        style="@style/CardNumber"
+        android:nextFocusDown="@+id/expMonth"
+        android:nextFocusForward="@+id/expMonth"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:textSize="14sp"
+        android:nextFocusRight="@+id/expMonth" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+             >
+        <Spinner
+            android:id="@+id/expMonth"
+            android:layout_width="fill_parent"
+            android:entries="@array/month_array"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/expYear" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            >
+        <Spinner
+            android:id="@+id/expYear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/year_array"
+            android:nextFocusForward="@+id/cvc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+        <EditText
+            android:id="@+id/cvc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/cvc"
+
+            android:background="@null"
+            android:nextFocusForward="@+id/zipcode" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical"
+        android:background="#00ffffff"
+        android:visibility="visible">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/zipcode"
+        android:hint="Billing Address zipcode"
+        android:nextFocusDown="@+id/sav"
+        android:background="@null"
+        android:textSize="14sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
+        android:nextFocusForward="@+id/sav"
+        android:nextFocusRight="@+id/sav" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_bottom_line"></LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/background_btn_state"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+
+        android:text="@string/save"
+        />
+
+</LinearLayout>
