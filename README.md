@@ -10,10 +10,10 @@ We always want to put our own personal touch on things, so why cant we do it wit
 
 The design doc for Shop3D and its server can be seen [here](https://drive.google.com/open?id=0BzkvMWM-w80JZFg1V2V0bnh1ZzQ).
 
-For the Parse table that stores the modelsd see [here](https://drive.google.com/open?id=0BzkvMWM-w80JSDMxYVZ3ZmZ0QTA) and [here](https://drive.google.com/open?id=0BzkvMWM-w80JSnRsbVhEZG1la2c)
+For the Parse table that stores the models see [here](https://drive.google.com/open?id=0BzkvMWM-w80JSDMxYVZ3ZmZ0QTA) and [here](https://drive.google.com/open?id=0BzkvMWM-w80JSnRsbVhEZG1la2c)
 For all model categories see [here](https://drive.google.com/open?id=0BzkvMWM-w80JUm1wQTVfRGd3MGc)
 
-For more images about the ap go [here](https://drive.google.com/open?id=0BzkvMWM-w80JQUNESFl2dVM1djg).
+For more images about the app go [here](https://drive.google.com/open?id=0BzkvMWM-w80JQUNESFl2dVM1djg).
 
 
 The server for this applicataion is [here](https://github.com/fahadzafar/ServerShop3D)
